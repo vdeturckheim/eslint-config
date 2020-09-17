@@ -1,0 +1,25 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test-unit && npm run test-e2e",
+    "test-unit": "node tests/tests.js",
+    "test-e2e": "node e2e/runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdeturckheim/eslint-config.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vdeturckheim/eslint-config/issues"
+  },
+  "homepage": "https://github.com/vdeturckheim/eslint-config#readme",
+  "private": true,
+  "dependencies": {
+    "eslint": "^7.9.0"
+  }
+}
