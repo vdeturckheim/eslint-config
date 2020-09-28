@@ -2,6 +2,8 @@
 
 This repository contains some custom [ESLint](https://eslint.org/) rules.
 
+This project only works with Node.js 12 and later.
+
 ## Rules
 
 ### readable-stringify
