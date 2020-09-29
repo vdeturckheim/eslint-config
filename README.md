@@ -53,6 +53,9 @@ you can also run all the tests at once with
 npm test
 ```
 
+The tests should be considered as successful if their return code is 0.
+The will likely not log much if they don't fail.
+
 ### Adding a new rule
 
 To add a new rule, please add a new file in the `rules` directory with the code
@@ -60,3 +63,18 @@ of the rule inside.
 
 Also, please consider updating the unit tests and the end-to-end tests to cover
 the new rule.
+
+### Testing with docker
+
+A Dockerfile is provided for testing convenience.
+
+You can build it with
+```
+docker build . -t eslint
+```
+Then run it with
+```
+docker run -ti eslint
+```
+
+The container should exit properly if the tests are passing.
